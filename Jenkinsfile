@@ -3,7 +3,7 @@ pipeline{
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('docker-rupak')
+		DOCKERHUB_CREDENTIALS=credentials('docker-hub-arupak373')
 	}
 
 	stages {
