@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t arupak373/firstdemo -f Dockerfile .'
+				sh 'sudo docker build -t arupak373/firstdemo -f Dockerfile .'
 			}
 		}
 
