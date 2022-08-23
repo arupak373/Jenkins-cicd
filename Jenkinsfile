@@ -3,7 +3,7 @@ pipeline{
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('docker-hub-tejindra1')
+		DOCKERHUB_CREDENTIALS=credentials('docker-rupak')
 	}
 
 	stages {
@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'sudo docker build -t tejindra-devops6 -f Dockerfile .'
+				sh 'sudo docker build -t arupak373 -f Dockerfile .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline{
 		stage('Push') {
 
 			steps {
-				sh 'sudo docker push tejindra1/devops'
+				sh 'sudo docker push arupak373/firstdemo'
 			}
 		}
 	}
