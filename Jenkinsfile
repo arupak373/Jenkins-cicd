@@ -14,6 +14,12 @@ pipeline{
 				checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'git-rupak', url: 'https://github.com/arupak373/Jenkins-cicd.git']]])
 			}
 		}
+		stage('Build') {
+
+			steps {
+				sh 'sudo docker build -t arupak373/firstdemo -f Dockerfile .'
+			}
+		}
 
 		
 		stage('Login') {
