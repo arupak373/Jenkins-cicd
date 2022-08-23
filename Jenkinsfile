@@ -15,13 +15,7 @@ pipeline{
 			}
 		}
 
-		stage('Build') {
-
-			steps {
-				sh 'sudo docker build -t arupak373/firstdemo -f Dockerfile .'
-			}
-		}
-
+		
 		stage('Login') {
 
 			steps {
