@@ -18,7 +18,7 @@ pipeline{
 		stage('Build') {
 
 			steps {
-				sh 'sudo docker build -t arupak373 -f Dockerfile .'
+				sh 'sudo docker build -t rupak-devops -f Dockerfile .'
 			}
 		}
 
